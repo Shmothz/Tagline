@@ -1,3 +1,6 @@
-$(document).ready(function() {
-    $('.present-slider').slick({})
+import $ from "jquery";
+import "slick-carousel";
+
+$(document).on('ready', function() {
+    $(".slider").slick();
 });

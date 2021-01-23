@@ -547,6 +547,14 @@ template {
 [hidden] {
     display: none;
 }
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/03523cf578d69fa923226ff457b92d90.ttf) format('truetype');
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .promo {
   background-image: url(img/5a4ff02d0840072501127b0a796ad8de.png);
   background-size: cover;
@@ -613,4 +621,70 @@ template {
 .present-slider .slide__wrapper .slide__btn:active {
   outline: none;
   border: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+.services {
+  background-color: #2F343A;
+  padding: 120px 0;
+}
+.services .useless-yellow-line {
+  width: 90px;
+  height: 6px;
+  background-color: #C8A35F;
+}
+.services__title {
+  margin-top: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+.services__wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.services__wrapper .tab {
+  background-color: #393F47;
+  width: 280px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.services__wrapper .tab:hover {
+  background-color: #C8A35F;
+}
+.services__wrapper .tab .tab__wrapp {
+  width: 70px;
+  height: 70px;
+  background-image: url(img/03e051cffb0703e8ecbc22794a847b8a.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.services__wrapper .tab:hover .tab__wrapp {
+  background-color: white;
+  border-radius: 50%;
+  background-image: url(img/ad4ce8654dc102482a3b1dbec13a5416.png);
+}
+.services__wrapper .tab .tab__text {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
 }

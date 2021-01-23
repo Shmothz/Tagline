@@ -21,7 +21,11 @@ module.exports = {
             },
             {
                 test: /\.(woff|woff2|ttf)$/,
-                use: 'file-loader'
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'fonts',
+                    publicPath: 'fonts'
+                }
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/,
