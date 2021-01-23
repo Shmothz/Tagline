@@ -1,0 +1,85 @@
+@import "../../extra/variable.scss";
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    @media screen and (max-width: 1200px) {
+        max-width: 1100px;
+    }
+    @media screen and (max-width: 600px) {
+        max-width: 320px;
+    }
+}
+
+.cap {
+    background-color: $dark-yellow;
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+        .cap__lang {
+            font-weight: 400;
+            font-size: 12px;
+            color: white;
+            .lang__item {
+                margin-left: 10px;
+                opacity: .5;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+        .cap__phone,
+        .cap__email {
+            a {
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 12px;
+                color: white;
+            }
+        }
+    }
+}
+
+.header {
+    background-color: $grey-blue;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    &__wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .header__logo {
+            display: inline-block;
+            padding: 27px 0;
+            width: 160px;
+            height: 46px;
+        }
+        .header__geoloc {
+            display: inline-block;
+            margin-left: 30px;
+            border-left: 1px solid #F2F2F2;
+            .geoloc__img,
+            .geoloc__text {
+                vertical-align: middle;
+                margin: auto 0;
+                margin-left: 30px;
+                align-items: center;
+            }
+        }
+        .header__nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+            .nav__item {
+                display: inline-block;
+                margin-right: 30px;
+                list-style: none;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

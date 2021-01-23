@@ -1,0 +1,41 @@
+@import "../../extra/variable.scss";
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    @media screen and (max-width: 1200px) {
+        max-width: 1100px;
+    }
+    @media screen and (max-width: 600px) {
+        max-width: 320px;
+    }
+}
+
+.footer {
+    background-color: $dark-yellow;
+    .footer__wrapper {
+        padding: 60px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .footer__logo {
+            width: 160px;
+            height: 46px;
+        }
+        .contacts__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 40%;
+            .contacts__adress {
+                color: white;
+            }
+            .contacts__email {
+                color: black;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
