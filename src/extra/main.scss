@@ -13,19 +13,28 @@ body {
     margin: 0 auto;
     @media screen and (max-width: 1200px) {
         max-width: 1100px;
+        padding: 0 16px;
     }
     @media screen and (max-width: 600px) {
         max-width: 320px;
+        padding: 0 8px;
     }
 }
 
 .promo {
     background-image: url('../img/whiteTruck.png');
     background-size: cover;
+    background-position: center;
     padding: 155px 0 220px;
+    @media screen and (max-width: 1200px) {
+        padding: 135px 0 200px;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 0px;
+    }
     &__wrapper {
         border: 1px solid $dark-yellow;
-        width: 920px;
+        max-width: 920px;
         margin: 0 auto;
         .promo__title {
             font-size: 64px;
@@ -33,6 +42,13 @@ body {
             color: white;
             text-align: center;
             padding: 45px 70px 0 70px;
+            margin: 0;
+            @media screen and (max-width: 1200px) {
+                padding: 45px 70px 0 70px;
+            }
+            @media screen and (max-width: 600px) {
+                padding: 25px 40px 0 40px;
+            }
         }
         .promo__text {
             font-size: 18px;
@@ -40,6 +56,13 @@ body {
             text-align: center;
             margin-top: 45px;
             padding: 0 70px 45px 70px;
+            @media screen and (max-width: 1200px) {
+                padding: 0 70px 45px 70px;
+            }
+            @media screen and (max-width: 600px) {
+                padding: 0 40px 25px 40px;
+                margin: 20px 0 0;
+            }
         }
     }
 }
@@ -50,12 +73,20 @@ body {
         &__wrapper {
             max-width: 1200px;
             margin: 0 auto;
-            padding-top: 120px;
-            padding-bottom: 130px;
+            padding: 120px 0 130px;
             background-image: url(../img/yellowTruck.png);
             background-size: 450px;
-            background-position: top 50% right 190px;
+            background-position: top 50% right 15%;
             background-repeat: no-repeat;
+            @media screen and (max-width: 1200px) {
+                max-width: 1100px;
+                padding: 100px 0 110px;
+            }
+            @media screen and (max-width: 600px) {
+                max-width: 320px;
+                padding: 50px 0 60px;
+                background-image: none;
+            }
             .useless-yellow-line {
                 width: 90px;
                 height: 6px;
@@ -94,12 +125,18 @@ body {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+    @media screen and (max-width: 1200px) {
+        max-width: 1100px;
+    }
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
     .present-slider__arrows {
         position: absolute;
-        height: 260px;
+        height: 280px;
         z-index: 2;
         right: 0;
-        top: 120px;
+        top: 100px;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
@@ -132,6 +169,12 @@ body {
 .services {
     background-color: $dark-grey-blue;
     padding: 120px 0 60px 0;
+    @media screen and (max-width: 1200px) {
+        padding: 80px 0 40px 0;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 40px 0 20px 0;
+    }
     .useless-yellow-line {
         width: 90px;
         height: 6px;
@@ -185,20 +228,24 @@ body {
 .about-us {
     background-color: $dark-grey-blue;
     padding: 60px 0 120px 0;
+    @media screen and (max-width: 1200px) {
+        padding: 40px 0 80px 0;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 20px 0 40px 0;
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;
-    }
-    &__bgc-cude {
-        background-color: $grey-blue;
-        width: 400px;
-        height: 100%;
-        position: absolute;
-        left: 50%;
-        z-index: -1;
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+        }
     }
     &__left-side {
         width: 40%;
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+        }
         .useless-yellow-line {
             width: 90px;
             height: 6px;
@@ -219,11 +266,17 @@ body {
     }
     &__right-side {
         width: 60%;
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+        }
         .about-us__tabs {
             display: flex;
             justify-content: flex-end;
             flex-wrap: wrap;
             margin-top: 80px;
+            @media screen and (max-width: 1200px) {
+                justify-content: center;
+            }
             .tab__wrapp {
                 display: flex;
                 flex-direction: column;

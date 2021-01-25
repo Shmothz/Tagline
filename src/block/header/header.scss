@@ -4,9 +4,11 @@
     margin: 0 auto;
     @media screen and (max-width: 1200px) {
         max-width: 1100px;
+        padding: 0 16px;
     }
     @media screen and (max-width: 600px) {
         max-width: 320px;
+        padding: 0 8px;
     }
 }
 
@@ -51,6 +53,8 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        flex-wrap: wrap;
+        @media screen and (max-width: 1200px) {}
         .header__logo {
             display: inline-block;
             padding: 27px 0;
@@ -61,6 +65,9 @@
             display: inline-block;
             margin-left: 30px;
             border-left: 1px solid #F2F2F2;
+            @media screen and (max-width: 600px) {
+                display: none;
+            }
             .geoloc__img,
             .geoloc__text {
                 vertical-align: middle;
@@ -74,6 +81,10 @@
             flex-grow: 1;
             display: flex;
             justify-content: flex-end;
+            @media screen and (max-width: 1200px) {
+                flex-direction: column;
+                align-items: flex-end;
+            }
             .nav__item {
                 display: inline-block;
                 margin-right: 30px;
@@ -81,6 +92,13 @@
                 cursor: pointer;
                 &:last-of-type {
                     margin-right: 0;
+                }
+                @media screen and (max-width: 1200px) {
+                    margin-right: 0;
+                    margin-top: 8px;
+                    &:first-of-type {
+                        margin-top: 0;
+                    }
                 }
             }
         }
