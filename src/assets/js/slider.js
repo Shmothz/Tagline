@@ -1,7 +1,7 @@
 import $ from "jquery";
 import "slick-carousel";
 
-const slider = () => {
+const slider = function() {
     $('.present-slider').slick({
         arrows: true,
         dots: false,
@@ -13,6 +13,4 @@ const slider = () => {
         nextArrow: '<button class="arrow-next">СЛЕД</button>'
     })
 }
-export {
-    slider
-}
+export default slider

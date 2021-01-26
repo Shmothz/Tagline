@@ -8,7 +8,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.join(__dirname, './dist'),
-        filename: `[name].[hash].js`
+        filename: `[name].js`
     },
     module: {
         rules: [{
@@ -60,7 +60,7 @@ module.exports = {
         new MiniCssExtractPlugin(),
         new CopyWebpackPlugin({
             patterns: [{
-                from: 'src/img',
+                from: 'src/assets/img',
                 to: 'img'
             }]
         })
