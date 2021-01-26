@@ -1,13 +1,2 @@
-import $ from 'jquery'
-import 'slick-carousel'
-import './block/header/header.scss'
-import './block/footer/footer.scss'
-import './extra/main.scss'
-import './extra/slider.js'
-// import './img/darkAirplane.png'
-// import './img/lightAirplane.png'
-// import './img/logo.png'
-// import './img/point.png'
-// import './img/redTruck.png'
-// import './img/whiteTruck.png'
-// import './img/yellowTruck.png'
+import './assets/styles/style.scss';
+import './assets/js/index';
