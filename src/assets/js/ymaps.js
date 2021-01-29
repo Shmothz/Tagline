@@ -5,8 +5,8 @@ export default function() {
     ymaps.load()
         .then(maps => {
             const map = new maps.Map('map', {
-                center: [-8.369326, 115.166023],
-                zoom: 7
+                center: [59.927125, 30.374860],
+                zoom: 17
             });
         })
         .catch(error => console.log('Failed to load Yandex Maps', error));

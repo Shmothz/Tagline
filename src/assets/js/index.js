@@ -1,9 +1,10 @@
 import $ from 'jquery' //vendor-js
 import 'slick-carousel/slick/slick.css' //vendor-css
-import { slider } from './slider' //js
-import ymaps from './ymaps';
+import slider from './slider' //js
+import ymaps from './ymaps' //js
 
-$(document).on("load", function() {
+$(function() {
     slider();
     ymaps();
+    console.log('Работает.');
 });
