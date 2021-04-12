@@ -1,12 +1,13 @@
 {
     "name": "tagline",
-    "homepage": "https://shmothz.github.io/Tagline/",
+    "homepage": "https://shmothz.github.io/Tagline",
     "version": "1.0.0",
     "description": "tagline webpack course",
     "main": "index.js",
     "scripts": {
         "dev": "webpack --mode development",
         "prod": "webpack --mode production",
+        "build": "webpack",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
     },
